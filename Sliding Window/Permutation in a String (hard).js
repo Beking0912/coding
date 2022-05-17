@@ -2,6 +2,10 @@
  * Given a string and a pattern, find out if the string contains any permutation of the pattern.
  * 
  * Time O(N+M)  Space O(M)
+ * 
+ * 翻译题目：
+ * 相当给定一个 s 和一个 t，请问 s 中是否存在一个子串，包含 s 中所有字符且不包含其他字符？
+ * 根据这个就知道窗口收缩的条件了，一旦窗口大于等于t中的字符数量，就应该判断是否满足结束条件，若满足则结束，否则收缩窗口。
  */
 
  function find_permutation(str, pattern) {

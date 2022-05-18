@@ -10,9 +10,7 @@
 
  function find_permutation(str, pattern) {
     // 1. Create a HashMap to calculate the frequencies of all characters in the pattern.
-    let windowStart = 0,
-      matched = 0,
-      charFrequency = {};
+    let windowStart = 0, matched = 0, charFrequency = {};
   
     // 2. Iterate through the string, adding one character at a time in the sliding window.
     for (i = 0; i < pattern.length; i++) {
@@ -21,36 +19,29 @@
     }
   
     // try to extend the range [windowStart, windowEnd]
+    // 先不断增加right扩大窗口，直到窗口中的内容符合要求
     for (windowEnd = 0; windowEnd < str.length; windowEnd++) {
       const rightChar = str[windowEnd];
       if (rightChar in charFrequency) {
-        // decrement its frequency in the map
         charFrequency[rightChar] -= 1;
-
-        // got a complete match
         if (charFrequency[rightChar] === 0) {
           matched += 1;
         }
       }
   
-      // the number of characters matched is equal to the number of distinct characters in the pattern
-      // we have gotten our required permutation.
+      // 一旦窗口大于等于t中的字符数量，就应该判断是否满足结束条件，若满足则结束
       if (matched === Object.keys(charFrequency).length) {
         return true;
       }
   
-      // shrink the window to make it equal to the pattern’s size
+      // 否则收缩窗口，直到窗口中的内容不再满足要求。
       if (windowEnd >= pattern.length - 1) {
         leftChar = str[windowStart];
         windowStart += 1;
-
-        // if the character going out was part of the pattern
         if (leftChar in charFrequency) {
           if (charFrequency[leftChar] === 0) {
             matched -= 1;
           }
-
-          // put it back in the frequency HashMap.
           charFrequency[leftChar] += 1;
         }
       }

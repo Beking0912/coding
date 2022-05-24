@@ -7,8 +7,8 @@
  * https://leetcode.cn/problems/3sum-closest/solution/zui-jie-jin-de-san-shu-zhi-he-by-leetcode-solution/
  * 首先考虑枚举第一个元素 a，对于剩下的两个元素 b 和 ，我们希望它们的和最接近 target−a
  * 用 p_bp 和 p_cp 分别表示指向 bb 和 cc 的指针，
- * 初始时，p_bp 指向位置 i+1i+1，即左边界；p_cp 指向位置 n-1n−1，即右边界。
- * 在每一步枚举的过程中，我们用 a+b+ca+b+c 来更新答案，并且：
+ * 初始时，p_bp 指向位置 i+1，即左边界；p_cp 指向位置 n−1，即右边界。
+ * 在每一步枚举的过程中，我们用 a+b+c 来更新答案，并且：
  * 如果 a+b+c ≥ target，那么就将 p_cp 向左移动一个位置；
  * 如果 a+b+c < target，那么就将 p_bp 向右移动一个位置。
  * 

@@ -5,6 +5,7 @@
  * Time O(N^2)  Space O(N)
  * 
  * 先固定第一个数a，然后b、c只能从两边向中间靠（在a之后）。细节条件就是去重处理
+ * https://leetcode.cn/problems/3sum/solution/three-sum-giftu-jie-by-githber/
  */
  function search_triplets(arr) {
     arr.sort((a, b) => a - b);
@@ -30,10 +31,10 @@
 
         // 跳过重复值
         while (left < right && arr[left] === arr[left - 1]) {
-          left++; // skip same element to avoid duplicate triplets
+          left++;
         }
         while (left < right && arr[right] === arr[right + 1]) {
-          right--; // skip same element to avoid duplicate triplets
+          right--;
         }
       } else if (target_sum > current_sum) {
         left++; // we need a pair with a bigger sum

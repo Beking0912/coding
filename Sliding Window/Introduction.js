@@ -13,11 +13,11 @@ function find_averages_of_subarrays(K, arr) {
   let windowSum = 0.0;
   let windowStart = 0;
   for (let windowEnd = 0; windowEnd < arr.length; windowEnd++) {
-    windowSum += arr[windowEnd]; // add the next element
+    windowSum += arr[windowEnd];
     if (windowEnd >= K - 1) {
-      result.push(windowSum / K); // calculate the average
-      windowSum -= arr[windowStart]; // subtract the element going out
-      windowStart++; // slide the window ahead
+      result.push(windowSum / K);
+      windowSum -= arr[windowStart];
+      windowStart++;
     }
   }
   return result;

@@ -21,6 +21,12 @@ function search_pair(arr, target_sum, first) {
   while (left < right) {
     if (arr[left] + arr[right] < target_sum) { // found the triplet
       count += right - left;
+
+      // for (i = right; i > left; i--) {
+      //   triplets.push([arr[first], arr[left], arr[i]]);
+      // }
+      // Time O(N^3)  Space O(N)
+
       left++;
     } else {
       right--;

@@ -5,6 +5,8 @@
 5. **Triplet Sum Close to Target (medium) 在数组中找到一个和尽可能接近目标数的三元组的和**
 6. **Triplets with Smaller Sum (medium) 给定未排序的数组，找出满足arr[i]+arr[j]+arr[k]小于target的三元组的个数**
 7. **Subarrays with Product Less than a Target (medium) 找到乘积小于目标数的所有连续子数组**
+
 8. **Dutch National Flag Problem (medium) 给定一个包含0 1 2的数组，对数组进行就地排序**
+9. **Quadruple Sum to Target (medium) 给定未排序的数组，找出和为target的所有四元组** 跟5很像
 
 

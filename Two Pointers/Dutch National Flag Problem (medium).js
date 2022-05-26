@@ -13,6 +13,7 @@
 function dutch_flag_sort(arr) {
   // all elements < low are 0, and all elements > high are 2
   // all elements from >= low < i are 1
+  // 将0往前推 将2往后推
 
   let i = 0;
   let low = 0;

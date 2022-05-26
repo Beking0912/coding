@@ -28,6 +28,8 @@ function has_cycle(head) {
 
 /**
  * Problem 1: Given the head of a LinkedList with a cycle, find the length of the cycle.
+ * 
+ * O(N)  O(1)
  */
 function find_cycle_length(head) {
   let slow = head;

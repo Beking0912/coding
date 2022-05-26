@@ -8,3 +8,4 @@ By moving at different speeds (say, in a cyclic LinkedList), the algorithm prove
 4. Middle of the LinkedList (easy) 找出单链表的中间节点
 5. **Palindrome LinkedList (medium) 单链表是否是回文**
 6. **Rearrange a LinkedList (medium) 将单链表后半部分的节点以相反的顺序交替插入到前半部分的节点中**
+7. **Cycle in a Circular Array (hard) 在圆形阵列中循环** 不熟悉

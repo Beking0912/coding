@@ -5,6 +5,8 @@
  * 1. find the middle node of the LinkedList.
  * 2. reverse the second half of the LinkedList.
  * 3. iterate through the first half and the reversed second half to produce a LinkedList in the required order.
+ * 
+ *  O(N)  O(1)
  */
 class Node {
   constructor(value, next = null) {

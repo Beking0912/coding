@@ -1,6 +1,8 @@
 /**
  * Given an array of intervals representing ‘N’ appointments,
  * find out if a person can attend all the appointments.
+ * 
+ *  O(N * logN)  O(N)
  */
 function can_attend_all_appointments(intervals) {
   intervals.sort((a, b) => a[0] - b[0]);

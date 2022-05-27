@@ -39,8 +39,8 @@ const intervalIntersection = (A, B) => {
   let i = 0;
   let j = 0;
   while (i < A.length && j < B.length) {
-    const start = Math.max(A[i][0], B[j][0]); // 交集区间的左端，取它们的较大者
-    const end = Math.min(A[i][1], B[j][1]); // 交集区间的右端，取它们的较小者
+    const start = Math.max(A[i][0], B[j][0]); // 交集区间的左端，取较大者
+    const end = Math.min(A[i][1], B[j][1]); // 交集区间的右端，取较小者
 
     if (start <= end) { // 形成了交集区间
       res.push([start, end]);

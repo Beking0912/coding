@@ -4,6 +4,8 @@
  * if all the jobs are running on the same machine.
  *
  * [ start, end, cpuLoad ]
+ * 
+ * O(N*logN)  O(N)
  */
 const Heap = require("./collections/heap"); //http://www.collectionsjs.com
 

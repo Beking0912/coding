@@ -1,9 +1,9 @@
 /**
  * Given the head of a LinkedList and two positions ‘p’ and ‘q’,
  * reverse the LinkedList from position ‘p’ to ‘q’.
- * 
+ *
  * O(N)  O(1)
- * 
+ *
  * https://leetcode.cn/problems/reverse-linked-list-ii
  */
 function reverse_sub_list(head, p, q) {
@@ -46,3 +46,24 @@ function reverse_sub_list(head, p, q) {
   last_node_of_sub_list.next = current;
   return head;
 }
+
+/**
+ * 方法二：一次遍历「穿针引线」反转链表（头插法）
+ */
+var reverseBetween = function (head, left, right) {
+  const dummy_node = new ListNode(-1); // 设置 dummyNode 是这一类问题的一般做法
+  dummy_node.next = head;
+  let pre = dummy_node;
+  for (let i = 0; i < left - 1; ++i) {
+    pre = pre.next;
+  }
+
+  let cur = pre.next;
+  for (let i = 0; i < right - left; ++i) {
+    const next = cur.next;
+    cur.next = next.next;
+    next.next = pre.next;
+    pre.next = next;
+  }
+  return dummy_node.next;
+};

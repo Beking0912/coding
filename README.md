@@ -18,3 +18,8 @@ K-way merge
 0/1 Knapsack (Dynamic Programming)
 Topological Sort (Graph)
 Kth Smallest Number
+
+# plan
+      - 06.15 刷完全部题目
+06.16 - 06.25 复习重刷一遍
+06.26 - 06.30 练习面试话术

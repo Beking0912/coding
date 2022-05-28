@@ -1,17 +1,16 @@
 /**
- * Given the head of a LinkedList and a number ‘k’, reverse every ‘k’ sized sub-list starting from the head.
+ * Given the head of a LinkedList and a number ‘k’, reverse every alternating ‘k’ sized sub-list starting from the head.
+ *  
  * O(N)  O(1)
- * https://leetcode.cn/problems/reverse-nodes-in-k-group/
  */
-
-function reverse_every_k_elements(head, k) {
+function reverse_alternate_k_elements(head, k) {
   if (k <= 1 || head === null) {
     return head;
   }
 
   let current = head;
   let previous = null;
-  while (true) {
+  while (current !== null) {
     const last_node_of_previous_part = previous;
     const last_node_of_sub_list = current;
     let next = null;
@@ -23,7 +22,7 @@ function reverse_every_k_elements(head, k) {
       current.next = previous;
       previous = current;
       current = next;
-      i += 1;
+      i++;
     }
 
     // connect with the previous part
@@ -32,17 +31,19 @@ function reverse_every_k_elements(head, k) {
     } else {
       head = previous;
     }
-  
+
     // connect with the next part
     last_node_of_sub_list.next = current;
 
     /**
-     * diff
+     * diff: skip 'k' nodes
      */
-    if (current === null) {
-      break;
+    i = 0;
+    while (current !== null && i < k) {
+      previous = current;
+      current = current.next;
+      i++;
     }
-    previous = last_node_of_sub_list;
   }
   return head;
 }

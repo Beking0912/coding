@@ -2,6 +2,8 @@
  * 数组中重复的数据
  * Find that duplicate number without using any extra space.
  * O(N) O(1)
+ * 
+ * https://leetcode.cn/problems/find-the-duplicate-number/
  */
 function find_duplicate(nums) {
   let i = 0;

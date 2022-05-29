@@ -6,3 +6,4 @@
 6. **Level Order Successor (easy)**
 7. Connect Level Order Siblings (medium)
 8. **Connect All Level Order Siblings (medium) 二叉树展开为链表**
+9. **Right View of a Binary Tree (easy) 二叉树的右视图**

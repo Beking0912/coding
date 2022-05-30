@@ -4,3 +4,4 @@
 4. **Path With Given Sequence (medium)**
 5. **Count Paths for a Sum (medium) 路径总和 II** 
 6. **Tree Diameter (medium) 二叉树的直径**
+7. Path with Maximum Sum (hard)

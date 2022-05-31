@@ -1,5 +1,6 @@
 /**
  * Design a class to calculate the median of a number stream.
+ * https://leetcode.cn/problems/find-median-from-data-stream/
  * 
  * 使用两个堆，来存储数据流
  * 使用最小堆A保存较大的一半，最大堆B保存较小的一半
@@ -27,6 +28,20 @@ class MedianOfAStream {
 
     if (this.maxHeap.length < this.minHeap.length) {
         this.maxHeap.push(this.minHeap.pop());
+    }
+  }
+
+  insert_num2(num) {
+    if (this.maxHeap.length === 0 || this.maxHeap.peek() >= num) {
+      this.maxHeap.push(num);
+    } else {
+      this.minHeap.push(num);
+    }
+  
+    if (this.maxHeap.length > this.minHeap.length + 1) {
+      this.minHeap.push(this.maxHeap.pop());
+    } else if (this.maxHeap.length < this.minHeap.length) {
+      this.maxHeap.push(this.minHeap.pop());
     }
   }
 

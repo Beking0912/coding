@@ -36,3 +36,4 @@ function recursive_dichotomy(arr, value, start, end) {
 ```
 
 1. Order-agnostic Binary Search (easy)
+2. Ceiling of a Number (medium)

@@ -40,3 +40,4 @@ function recursive_dichotomy(arr, value, start, end) {
 3. **Next Letter (medium)**
 4. **Number Range (medium)**
 5. **Search in a Sorted Infinite Array (medium)**
+6. Minimum Difference Element (medium)

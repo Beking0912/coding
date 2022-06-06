@@ -1,7 +1,8 @@
 /**
  * Given an array of lowercase letters sorted in ascending order,
  * find the smallest letter in the given array greater than a given ‘key’.
- *
+ * 
+ * O(logN) O(1)
  */
 function search_next_letter(letters, key) {
   let start = 0;

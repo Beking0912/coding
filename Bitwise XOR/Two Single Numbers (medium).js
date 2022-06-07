@@ -1,6 +1,8 @@
 /**
  * In a non-empty array of numbers, every number appears exactly twice except two numbers that appear only once.
  * Find the two numbers that appear only once.
+ * 
+ * O(n)  O(1)
  *
  * https://leetcode.cn/problems/single-number-iii/
  * 

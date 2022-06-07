@@ -41,3 +41,4 @@ function recursive_dichotomy(arr, value, start, end) {
 4. **Number Range (medium)**
 5. **Search in a Sorted Infinite Array (medium)**
 6. Minimum Difference Element (medium)
+7. Bitonic Array Maximum (easy)

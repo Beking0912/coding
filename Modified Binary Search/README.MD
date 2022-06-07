@@ -43,3 +43,4 @@ function recursive_dichotomy(arr, value, start, end) {
 6. Minimum Difference Element (medium)
 7. **Bitonic Array Maximum (easy)**
 8. Search Bitonic Array (medium)
+9. **Search in Rotated Array (medium) 搜索旋转排序数组**

@@ -1,5 +1,6 @@
 
-1. Single Number (easy)
+1. Single Number (easy) 只出现一次的数字
+2. Two Single Numbers (medium) 只出现一次的数字 III
 
 ```javascript
 /**

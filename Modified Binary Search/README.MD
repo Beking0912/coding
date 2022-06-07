@@ -44,4 +44,4 @@ function recursive_dichotomy(arr, value, start, end) {
 7. **Bitonic Array Maximum (easy)**
 8. Search Bitonic Array (medium)
 9. **Search in Rotated Array (medium) 搜索旋转排序数组**
-10. Rotation Count (medium)
+10. **Rotation Count (medium)**

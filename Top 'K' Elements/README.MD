@@ -6,3 +6,4 @@ This pattern will make use of the Heap to solve multiple problems dealing with �
 3. **'K' Closest Points to the Origin (easy) 最接近原点的 K 个点**
 4. Connect Ropes (easy)
 5. **Top 'K' Frequent Numbers (medium) 前 K 个高频元素**
+6. Frequency Sort (medium)

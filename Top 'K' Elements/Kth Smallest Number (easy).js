@@ -4,6 +4,7 @@
  * use a max-heap instead of a min-heap
  * the root is the biggest element in the max heap
  *
+ * O(N∗logK) O(K)
  */
 function find_Kth_smallest_number(nums, k) {
   const maxHeap = new Heap();

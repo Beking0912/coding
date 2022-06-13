@@ -11,3 +11,4 @@ This pattern will make use of the Heap to solve multiple problems dealing with �
 8. **'K' Closest Numbers (medium) 找到 K 个最接近的元素**
 9. **Maximum Distinct Elements (medium) 不同整数的最少数目**
 10. Sum of Elements (medium)
+11. **Rearrange String (hard) 重构字符串**

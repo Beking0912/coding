@@ -9,3 +9,4 @@ This pattern will make use of the Heap to solve multiple problems dealing with �
 6. Frequency Sort (medium)
 7. Kth Largest Number in a Stream (medium) 数组中的第K个最大元素
 8. **'K' Closest Numbers (medium) 找到 K 个最接近的元素**
+9. **Maximum Distinct Elements (medium) 不同整数的最少数目**

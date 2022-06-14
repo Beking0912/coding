@@ -12,4 +12,5 @@ This pattern will make use of the Heap to solve multiple problems dealing with �
 9. **Maximum Distinct Elements (medium) 不同整数的最少数目**
 10. Sum of Elements (medium)
 11. **Rearrange String (hard) 重构字符串**
-12. **Rearrange String K Distance Apart (hard) k距离间隔重排字符串**
+12. **Rearrange String K Distance Apart (hard) k距离间隔重排字符串** 不熟悉
+13. Scheduling Tasks (hard)  任务调度器

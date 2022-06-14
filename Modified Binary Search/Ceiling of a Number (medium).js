@@ -1,6 +1,6 @@
 /**
  * Given an array of numbers sorted in an ascending order, find the ceiling of a given number ‘key’.
- *
+ * https://leetcode.cn/problems/search-insert-position/solution/te-bie-hao-yong-de-er-fen-cha-fa-fa-mo-ban-python-/
  * O(logN) O(1)
  */
 function search_ceiling_of_a_number(arr, key) {
@@ -12,13 +12,11 @@ function search_ceiling_of_a_number(arr, key) {
   let end = arr.length - 1;
   while (start <= end) {
     const mid = Math.floor(start + (end - start) / 2);
-
-    if (key < arr[mid]) {
-      end = mid - 1;
-    } else if (key > arr[mid]) {
+   
+    if (key > arr[mid]) {
       start = mid + 1;
     } else {
-      return mid;
+      end = mid - 1;
     }
   }
   return start;

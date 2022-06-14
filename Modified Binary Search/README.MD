@@ -36,8 +36,8 @@ function recursive_dichotomy(arr, value, start, end) {
 ```
 
 1. Order-agnostic Binary Search (easy)
-2. **Ceiling of a Number (medium)**
-3. **Next Letter (medium)**
+2. **Ceiling of a Number (medium) 搜索插入位置**
+3. **Next Letter (medium) 寻找比目标字母大的最小字母**
 4. **Number Range (medium)**
 5. **Search in a Sorted Infinite Array (medium)**
 6. Minimum Difference Element (medium)

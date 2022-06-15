@@ -34,6 +34,28 @@ function binary_search(reader, key, start, end) {
   return -1;
 }
 
+// 2
+function search_in_infinite_array(reader, target) {
+  let high = 1;
+  while (reader.get(high) < target) {
+    high = high * 2;
+  }
+
+  let low = high / 2;
+  while (low <= high) {
+    let mid = low + (high - low) / 2;
+    let value = reader.get(mid);
+    if (value === target) {
+      return mid;
+    } else if (value > target) {
+      high = mid - 1;
+    } else {
+      low = mid + 1;
+    }
+  }
+  return -1;
+}
+
 //
 //
 class ArrayReader {

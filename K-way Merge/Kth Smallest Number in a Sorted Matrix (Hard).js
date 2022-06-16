@@ -38,9 +38,9 @@ var kthSmallest = function (matrix, k) {
   while (left < right) {
     const mid = left + ((right - left) >> 1);
     if (check(matrix, mid, k, n)) {
-      right = mid;
+      right = mid; // 第k小的数在左半部分，可能包含mid
     } else {
-      left = mid + 1;
+      left = mid + 1; // 第k小的数在右半部分，且不包含mid
     }
   }
   return left;
@@ -48,14 +48,14 @@ var kthSmallest = function (matrix, k) {
 var check = function (matrix, mid, k, n) {
   let num = 0;
 
-  let i = n - 1;
+  let i = n - 1; // 以列为单位找，找到每一列最后一个<=mid的数即知道每一列有多少个数<=mid
   let j = 0;
   while (i >= 0 && j < n) {
     if (matrix[i][j] <= mid) {
-      num += i + 1;
+      num += i + 1; // 第j列有i+1个元素<=mid
       j++;
     } else {
-      i--;
+      i--; // 第j列目前的数大于mid，需要继续在当前列往上找
     }
   }
   return num >= k;
